@@ -49,6 +49,9 @@ int main()
     	//Collects score total and calls the possible combination function.
     	printf("Enter the NFL score: ");
         scanf("%d", &total);
+	if (total < 2) {
+		break;
+	}
         printf("\npossible combinations of scoring plays:\n");
         possible_combination(total, scoringPlays, playSize, 0, 0, counts);
 
